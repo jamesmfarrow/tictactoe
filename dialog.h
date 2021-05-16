@@ -45,7 +45,8 @@ private slots:
 private:
     Ui::Dialog *ui;
     QPushButton *buttons[3][3];
-    Controller *controller{new Controller(this)};
+    //Controller *controller{new Controller(this)};
+    std::unique_ptr<Controller> controller{std::make_unique<Controller>(new Controller())};
     //GameChoice *gc{new GameChoice(this)};
     //std::unique_ptr<Controller> controller;
     //std::unique_ptr<GameChoice> gc;

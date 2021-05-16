@@ -2,20 +2,13 @@
 
 Controller::Controller(QObject *parent) : QObject(parent)
 {
-    //GC = std::make_unique<GameChoice>(new GameChoice());
+
 }
 
 Controller::~Controller()
 {
-    delete model;
+    //delete model;
 }
-
-/*
-void Controller::AIGameSelected()
-{
-    GC->setAIGameSelected(true);
-}
-*/
 
 void Controller::setOnePlayerGame()
 {

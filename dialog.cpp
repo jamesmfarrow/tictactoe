@@ -162,8 +162,6 @@ void Dialog::onePlayerGame()
     AIDifficulty();
     player1FirstMove();//ask if player 1 wants to go first
 
-
-    //gc->exec();
 }
 
 //two player game clicked
@@ -177,10 +175,6 @@ void Dialog::twoPlayerGame()
     controller->setTwoPlayerGame();
     controller->setAIPlayer(false);
     player1FirstMove();//ask if player 1 wants to go first
-
-
-
-    //gc->exec();
 
 }
 

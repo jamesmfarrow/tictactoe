@@ -5,13 +5,13 @@
 #include <memory>
 #include "model.h"
 
+
 class Controller : public QObject
 {
     Q_OBJECT
 public:
     explicit Controller(QObject *parent = nullptr);
     ~Controller();
-    //void AIGameSelected();
 
     void setOnePlayerGame();
     void setTwoPlayerGame();
@@ -42,8 +42,8 @@ public:
 signals:
 
 private:
-    Model *model{new Model(this)};
-    //std::unique_ptr<GameChoice> GC;
+    //Model *model{new Model(this)};
+    std::unique_ptr<Model> model{std::make_unique<Model>(new Model())};
 };
 
 #endif // CONTROLLER_H
