@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>resources/420-4201654_png-file-svg-tic-tac-toe-cross-clipart.png.jpeg</file>
+        <file>resources/circle.png</file>
+        <file>resources/noughts and crosses.icns</file>
+    </qresource>
+</RCC>
